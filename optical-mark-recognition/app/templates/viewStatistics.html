@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block content %}
+	<h1> Please enter the Student ID to view statistics for.<h1>
+	<form action="" method="post" name="stats">
+	{{form.hidden_tag()}}
+	<table>
+		<tr>
+			<td>Student ID:</td>
+			<td>{{form.studentId(size24) }}</td>
+		</tr>
+		<tr>
+			<td></td>
+			<td><input type="submit" value="Save Changes"></td>
+		</tr>
+	</table>
+	</form>
+{% endblock %}
